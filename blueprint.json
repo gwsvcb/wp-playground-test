@@ -6,10 +6,6 @@
   "phpExtensionBundles": ["core"],
   "plugins": [
     {
-      "slug": "advanced-custom-fields",
-      "activate": true
-    },
-    {
       "path": "/wp-content/plugins/gws-site-details",
       "activate": true
     },
