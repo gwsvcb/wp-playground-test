@@ -1,25 +1,33 @@
 {
   "meta": {
-    "name": "My Test Site",
-    "description": "A Playground setup for plugin/theme testing."
+    "name": "GWS Playground Setup",
+    "description": "A WordPress Playground configuration with ACF, site functionality plugins, and the bb-theme-child activated."
   },
   "phpExtensionBundles": ["core"],
   "plugins": [
     {
-      "slug": "hello-dolly",
+      "slug": "advanced-custom-fields",
+      "activate": true
+    },
+    {
+      "path": "/wp-content/plugins/gws-site-details",
+      "activate": true
+    },
+    {
+      "path": "/wp-content/plugins/gws-site-functionality",
       "activate": true
     }
   ],
   "themes": [
     {
-      "slug": "twentytwentyfive",
-      "activate": true
-    }
-  ],
-  "steps": [
+      "path": "/wp-content/themes/bb-theme"
+    },
     {
-      "step": "run_php",
-      "code": "<?php update_option('blogname', 'GitHub-Based Playground Site');"
+      "path": "/wp-content/themes/bb-theme-child",
+      "activate": true
+    },
+    {
+      "slug": "twentytwentyfive"
     }
   ]
 }
