@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "name": "My Test Site",
+    "description": "A Playground setup for plugin/theme testing."
+  },
+  "phpExtensionBundles": ["core"],
+  "plugins": [
+    {
+      "slug": "hello-dolly",
+      "activate": true
+    }
+  ],
+  "themes": [
+    {
+      "slug": "twentytwentyfive",
+      "activate": true
+    }
+  ],
+  "steps": [
+    {
+      "step": "run_php",
+      "code": "<?php update_option('blogname', 'GitHub-Based Playground Site');"
+    }
+  ]
+}
